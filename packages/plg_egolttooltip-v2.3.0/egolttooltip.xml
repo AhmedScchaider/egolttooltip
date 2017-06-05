@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_EGOLTTOOLTIP</name>
+	<creationDate>November 2014</creationDate>
+	<author>Egolt</author>
+	<authorEmail>info@egolt.com</authorEmail>
+	<authorUrl>http://www.egolt.com</authorUrl>
+	<copyright>Copyright (c) Egolt. All rights reserved</copyright>
+	<license>GNU GPL v2.0 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.3.0</version>
+	<description><![CDATA[ 
+		<div style="display:none" >
+			Egolt Tooltip is a plugin that change title attribute's view of links, image, text-area and input-box with beautiful effect box and immediate show. (See full description for more info and guide) """"""""""""""""""""""""""""""""""""""""""""""""""""""
+		</div>
+		<link rel="stylesheet" href="../media/egolttooltip/css/bootstrap.eg.css" type="text/css" />
+		<div class="egolt-admin">
+		<div class="row-fluid">
+			<div class="span3">
+				<center>
+					<br>
+					<img src="../media/egolttooltip/images/egolttooltip_big.png">
+						<div class="jpane-slider content">
+					<div class="inner-about">
+						<div class="aversion">Version 2.3.0</div>
+						
+						<div class="abuypro"><a href="http://www.egolt.com/go-pro/subscribe/levels?prd=egolttooltip" target="_blank">Buy Subscription</a></div>
+						
+						<div class="adownload"><a href="http://www.egolt.com/products/egolttooltip#download" target="_blank">Downloads</a></div>
+						
+						<div class="asupport"><a href="http://www.egolt.com/go-pro/subscribe/levels?prd=egolttooltip" target="_blank">Support</a></div>
+						
+						<div class="adocumentation"><a href="http://www.egolt.com/userguide/egolttooltip" target="_blank">User Guide</a></div>
+						
+						<div class="ademo"><a href="http://www.egolt.com/products/egolttooltip#demo" target="_blank">Demo</a></div>
+						
+						<div class="alicense">
+							Licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU/GPL 2</a>
+						</div>
+						
+					</div>
+				</div>
+				</center>
+			</div>
+			<div class="span6">
+				<div class="panel" style="padding: 5px;">
+					<h2 class="jpane-toggler title" id="cpanel-panel-popular"><span>Egolt Tooltip</span></h2>
+					<h4>Make a tooltip wherever you want!</h4>
+					<p class="aboutp">Egolt Tooltip is a Joomla! Tooltip which enables you to easily add you tooltip to any area of Joomla!. Just copy and paste the code in Joomla! editor and type the text you want to apear in tooltip, that's enough!</p>
+					<p class="aboutp">In addition, you can customize and control the tooltip with lots of parameters which we provided: Animation, Delay, Speed, Timer, Interactive mode, Offset, Position, Trigger, Touch devices and ... .</p>
+					<p class="aboutp">One of the great features of Egolt Tooltip is the ability to generating snapshot of websites by the tooltip. On the other hand, you can insert HTML code and images in the tooltip content.</p>
+					<p class="aboutp">By Egolt Tooltip, different styles and themes besides style parameters are available to adapt the tooltip to your template color schemes. Thus, you can use the tooltip in different figures.</p>
+					<p class="aboutp">Moreover, you can use the Egolt Tooltip as HTML tooltip too. So where you want to set the tooltip, even in HTML codes, you can, there is no limit! </p>
+					<p class="aboutp">You can get automatic updates by your website and "Egolt Update Key". Also, official support is available for all subscribers in all work days of the year. We will be pleased to be an stable polar of your websites by our support!</p>
+				</div>
+			</div>
+			<div class="span3 aboutcl">
+				<center>
+				<img src="../media/egolttooltip/images/egolt_big.png"><br><br>
+				© Powered by <a href="http://www.egolt.com" target="_blank">
+					Egolt		
+				</a>
+				<br><br>
+				<a href="http://www.egolt.com" target="_blank">www.egolt.com</a><br><br>
+				2012 - 2015<br>
+				</center>
+			</div>
+			<div style="clear:both;"></div>
+		</div>	
+		</div>	
+		<style>
+		.egolt-admin {
+			color: #000;
+			margin-bottom: 25px;
+		}
+		@media (min-width: 768px) {
+			.egolt-admin .aboutcl {
+				margin-top: 140px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 887px) {
+			.egolt-admin .aboutcl {
+				margin-left: 0 !important;
+				padding-left: 15px !important;
+			}
+			.egolt-admin .egpanelcover {
+				margin-left: 0 !important;
+				padding-left: 15px !important;
+			}	
+		}
+		@media (max-width: 767px) {
+			.egolt-admin .egicon {
+				margin-top: 10px;
+			}
+			.egolt-admin .inner-content div {
+				width: 100%;
+			}
+			.egolt-admin .egpanel h3 {
+				margin-top: 25px;
+				margin-bottom: -10px;
+			}
+		}
+		.startmsg a {
+			text-decoration: none !important;
+		}
+		.egolt-admin .egicon {
+			float: left;
+			margin-right: 10px;
+			width: 128px;
+			height: 128px;
+			border: 1px solid #eee;
+			text-align: center;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-moz-box-shadow: inset 0 0 40px #ddd;
+			-webkit-box-shadow: inset 0 0 40px #ddd;
+			box-shadow: inset 0 0 40px #ddd;
+		}
+		.egolt-admin .egicon:hover {
+			box-shadow: inset 0 0 70px #ddd;
+		}
+		.egolt-admin .egicon a {
+			text-decoration: none !important;
+			display: block;
+			padding: 22px 5px;
+			font-size: 15px;
+			color: #005580;
+		}
+		.egolt-admin .egicon a:hover {
+			color: #08c;
+		}
+		.egolt-admin .inner-about div {
+			background-position: 98% center;
+			background-repeat: no-repeat;
+			padding: 10px;
+			padding-right: 40px;
+			border: 1px solid #eaeaea;
+			margin: 5px;
+			color: #777;
+		}
+		.egolt-admin .adownload { 
+			background-image: url(../media/egolttooltip/images/icon-download.png);
+		}
+		.egolt-admin .adocumentation{
+			background-image: url(../media/egolttooltip/images/icon-documentation.png);
+		}
+		.egolt-admin .ademo {
+			background-image: url(../media/egolttooltip/images/icon-demo.png);
+		}
+		.egolt-admin .alicense{
+			background-image: url(../media/egolttooltip/images/icon-license.png);
+		}
+		.egolt-admin .abuypro{
+			background-image: url(../media/egolttooltip/images/buypro.gif);
+		}
+		.egolt-admin .asupport{
+			background-image: url(../media/egolttooltip/images/support.gif);
+		}
+		.egolt-admin .aforum{
+			background-image: url(../media/egolttooltip/images/forum.png);
+		}
+		.egolt-admin .aversion { 
+			background-image: url(../media/egolttooltip/icon-version.png);
+		}
+		.egolt-admin .aboutp {
+			text-align: justify;
+			direction: ltr;
+			padding: 5px;
+			line-height: 20px;
+		}
+		.startmsg {
+			font-size: 13px;
+			padding: 8px 35px 8px 14px;
+			margin-bottom: 20px;
+			color: #c09853;
+			text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+			background-color: #fcf8e3;
+			border: 1px solid #fbeed5;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		</style>
+	]]></description>
+	
+	<media destination="egolttooltip" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_system_egolttooltip.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_system_egolttooltip.sys.ini</language>
+   	</languages>	
+	
+	<files>
+		<filename plugin="egolttooltip">egolttooltip.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/egolttooltip/fields">
+		
+			<fieldset name="basic">
+				<field 
+					name="animation" 
+					type="list" 
+					default="fade"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_ANIMATION" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_ANIMATION_DESC"
+				>
+					<option value="fade">fade</option>
+					<option value="grow">grow</option>
+					<option value="swing">swing</option>
+					<option value="slide">slide</option>
+					<option value="fall">fall</option>
+				</field>
+				<field 
+					name="delay" 
+					type="text"  
+					default="200" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_DELAY" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_DELAY_DESC" 
+					filter="integer"
+				/>
+				<field 
+					name="speed" 
+					type="text"  
+					default="350" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SPEED" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SPEED_DESC" 
+					filter="integer"
+				/>	
+				<field 
+					name="timer" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_TIMER" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_TIMER_DESC" 
+					filter="integer"
+				/>
+				<field 
+					name="interactive" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVE" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVE_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="interactive2l" 
+					type="text"  
+					default="350" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVE2L" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVE2L_DESC" 
+					filter="integer"
+				/>
+				<field 
+					name="interactiveac" 
+					type="radio" 
+					default="1" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVEAC" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_INTERACTIVEAC_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="offsetx" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_OFFSETX" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_OFFSETX_DESC"
+				/>
+				<field 
+					name="offsety" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_OFFSETY" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_OFFSETY_DESC" 
+				/>
+				<field 
+					name="position" 
+					type="list" 
+					default="top" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_POSITION" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_POSITION_DESC"
+				>
+					<option value="top">top</option>
+					<option value="top-right">top-right</option>
+					<option value="top-left">top-left</option>
+					<option value="bottom">bottom</option>
+					<option value="bottom-right">bottom-right</option>
+					<option value="bottom-left">bottom-left</option>
+					<option value="right">right</option>
+					<option value="left">left</option>
+				</field>
+				<field 
+					name="trigger" 
+					type="radio" 
+					default="hover" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_TRIGGER" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_TRIGGER_DESC"
+				>
+					<option value="hover">hover</option>
+					<option value="click">click</option>
+				</field>
+				<field 
+					name="touchdevices" 
+					type="radio" 
+					default="1" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_TOUCHDEVICES" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_TOUCHDEVICES_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="updateanimation" 
+					type="radio" 
+					default="1" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_UPDATEANIMATION" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_UPDATEANIMATION_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="htmlselector" 
+					type="radio" 
+					default=".egtip" 
+					class="btn-group"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_HTML_TOOLTIP" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_HTML_TOOLTIP_DESC"
+				>
+					<option value="[title]">PLG_SYSTEM_EGOLTTOOLTIP_ONTITLE</option>
+					<option value=".egtip">PLG_SYSTEM_EGOLTTOOLTIP_ONCLASS</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="screenshot_width" 
+					type="text"  
+					default="200" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT_WIDTH" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT_WIDTH_DESC" 
+				/>
+				<field 
+					name="screenshot_hight" 
+					type="text"  
+					default="150" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT_HIGHT" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT_HIGHT_DESC" 
+				/>		
+				<field 
+					name="screenshot_service" 
+					type="list" 
+					default="page2images" 
+					class="btn-group"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SCREENSHOT_DESC"
+				>
+					<option value="page2images">Page2Images</option>
+					<option value="shrinktheweb">ShrinkTheWeb</option>
+					<option value="immediatenet">immediatenet</option>
+				</field>
+				<field 
+					name="api_t1" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_API_T1" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_API_T1_DESC" 
+				/>
+				<field 
+					name="api_t2" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_API_T2" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_API_T2_DESC" 
+				/>						
+			</fieldset>
+			
+			<fieldset name="EGOLTTOOLTIP_STYLE">
+				<field 
+					name="theme" 
+					type="list" 
+					default="default" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_THEME" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_THEME_DESC"
+				>
+					<option value="default">Default</option>
+					<option value="light">Light</option>
+					<option value="noir">Noir</option>
+					<option value="punk">Punk</option>
+					<option value="shadow">Shadow</option>
+				</field>
+				<field 
+					name="arrow" 
+					type="radio" 
+					default="1" 
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_ARROW" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_ARROW_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="arrowcolor" 
+					type="color"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_ARROWCOLOR" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_ARROWCOLOR_DESC" 
+				/>	
+				<field 
+					name="fixedwidth" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_FIXEDWIDTH" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_FIXEDWIDTH_DESC" 
+				/>	
+				<field 
+					name="maxwidth" 
+					type="text"  
+					default="" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_MAXWIDTH" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_MAXWIDTH_DESC" 
+				/>	
+			</fieldset>
+			
+			<fieldset name="EGOLTTOOLTIP_MENU">
+				<field 
+					name="egpage" 
+					type="radio" 
+					default="" 
+					class="btn-group"
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SELECT_PAGE" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SELECT_PAGE_DESC"
+				>
+					<option value="">PLG_SYSTEM_EGOLTTOOLTIP_ALL</option>
+					<option value="1">PLG_SYSTEM_EGOLTTOOLTIP_SELECTED_PAGES</option>
+					<option value="2">PLG_SYSTEM_EGOLTTOOLTIP_UNSELECTED_PAGES</option>
+				</field>
+				<field 
+					name="egmenuitem" 
+					type="menuitem" 
+					default="45" 
+					label="PLG_SYSTEM_EGOLTTOOLTIP_SELECT_MENU_ITEM" 
+					description="PLG_SYSTEM_EGOLTTOOLTIP_SELECT_MENU_ITEM_DESC" 
+					multiple="multiple" 
+				/>
+			</fieldset>
+			
+		</fields>
+	</config>
+	
+</extension>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>Egolt Tooltip</name>
+	<author>Egolt</author>
+	<creationDate>November 2015</creationDate>
+	<packagename>egolttooltip</packagename>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.3.1</version>
+	<url>http://www.egolt.com</url>
+	<packager>Egolt</packager>
+	<packagerurl>http://www.egolt.com</packagerurl>
+	<description><![CDATA[ 
+		<div style="display:none" >
+			Egolt Tooltip is a plugin that change title attribute's view of links, image, text-area and input-box with beautiful effect box and immediate show. (See full description for more info and guide) """"""""""""""""""""""""""""""""""""""""""""""""""""""
+		</div>
+		<link rel="stylesheet" href="../media/egolttooltip/css/bootstrap.eg.css" type="text/css" />
+		<div class="egolt-admin">
+		<div class="row-fluid">
+			<div class="span3">
+				<center>
+					<br>
+					<img src="../media/egolttooltip/images/egolttooltip_big.png">
+						<div class="jpane-slider content">
+					<div class="inner-about">
+						<div class="aversion">Version 2.3.0</div>
+						
+						<div class="abuypro"><a href="http://www.egolt.com/go-pro/subscribe/levels?prd=egolttooltip" target="_blank">Buy Subscription</a></div>
+						
+						<div class="adownload"><a href="http://www.egolt.com/products/egolttooltip#download" target="_blank">Downloads</a></div>
+						
+						<div class="asupport"><a href="http://www.egolt.com/go-pro/subscribe/levels?prd=egolttooltip" target="_blank">Support</a></div>
+						
+						<div class="adocumentation"><a href="http://www.egolt.com/userguide/egolttooltip" target="_blank">User Guide</a></div>
+						
+						<div class="ademo"><a href="http://www.egolt.com/products/egolttooltip#demo" target="_blank">Demo</a></div>
+						
+						<div class="alicense">
+							Licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU/GPL 2</a>
+						</div>
+						
+					</div>
+				</div>
+				</center>
+			</div>
+			<div class="span6">
+				<div class="panel" style="padding: 5px;">
+					<h2 class="jpane-toggler title" id="cpanel-panel-popular"><span>Egolt Tooltip</span></h2>
+					<h4>Make a tooltip wherever you want!</h4>
+					<p class="aboutp">Egolt Tooltip is a Joomla! Tooltip which enables you to easily add you tooltip to any area of Joomla!. Just copy and paste the code in Joomla! editor and type the text you want to apear in tooltip, that's enough!</p>
+					<p class="aboutp">In addition, you can customize and control the tooltip with lots of parameters which we provided: Animation, Delay, Speed, Timer, Interactive mode, Offset, Position, Trigger, Touch devices and ... .</p>
+					<p class="aboutp">One of the great features of Egolt Tooltip is the ability to generating snapshot of websites by the tooltip. On the other hand, you can insert HTML code and images in the tooltip content.</p>
+					<p class="aboutp">By Egolt Tooltip, different styles and themes besides style parameters are available to adapt the tooltip to your template color schemes. Thus, you can use the tooltip in different figures.</p>
+					<p class="aboutp">Moreover, you can use the Egolt Tooltip as HTML tooltip too. So where you want to set the tooltip, even in HTML codes, you can, there is no limit! </p>
+					<p class="aboutp">You can get automatic updates by your website and "Egolt Update Key". Also, official support is available for all subscribers in all work days of the year. We will be pleased to be an stable polar of your websites by our support!</p>
+				</div>
+			</div>
+			<div class="span3 aboutcl">
+				<center>
+				<img src="../media/egolttooltip/images/egolt_big.png"><br><br>
+				© Powered by <a href="http://www.egolt.com" target="_blank">
+					Egolt		
+				</a>
+				<br><br>
+				<a href="http://www.egolt.com" target="_blank">www.egolt.com</a><br><br>
+				2012 - 2015<br>
+				</center>
+			</div>
+			<div style="clear:both;"></div>
+		</div>	
+		</div>	
+		<style>
+		.egolt-admin {
+			color: #000;
+			margin-bottom: 25px;
+		}
+		@media (min-width: 768px) {
+			.egolt-admin .aboutcl {
+				margin-top: 140px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 887px) {
+			.egolt-admin .aboutcl {
+				margin-left: 0 !important;
+				padding-left: 15px !important;
+			}
+			.egolt-admin .egpanelcover {
+				margin-left: 0 !important;
+				padding-left: 15px !important;
+			}	
+		}
+		@media (max-width: 767px) {
+			.egolt-admin .egicon {
+				margin-top: 10px;
+			}
+			.egolt-admin .inner-content div {
+				width: 100%;
+			}
+			.egolt-admin .egpanel h3 {
+				margin-top: 25px;
+				margin-bottom: -10px;
+			}
+		}
+		.startmsg a {
+			text-decoration: none !important;
+		}
+		.egolt-admin .egicon {
+			float: left;
+			margin-right: 10px;
+			width: 128px;
+			height: 128px;
+			border: 1px solid #eee;
+			text-align: center;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-moz-box-shadow: inset 0 0 40px #ddd;
+			-webkit-box-shadow: inset 0 0 40px #ddd;
+			box-shadow: inset 0 0 40px #ddd;
+		}
+		.egolt-admin .egicon:hover {
+			box-shadow: inset 0 0 70px #ddd;
+		}
+		.egolt-admin .egicon a {
+			text-decoration: none !important;
+			display: block;
+			padding: 22px 5px;
+			font-size: 15px;
+			color: #005580;
+		}
+		.egolt-admin .egicon a:hover {
+			color: #08c;
+		}
+		.egolt-admin .inner-about div {
+			background-position: 98% center;
+			background-repeat: no-repeat;
+			padding: 10px;
+			padding-right: 40px;
+			border: 1px solid #eaeaea;
+			margin: 5px;
+			color: #777;
+		}
+		.egolt-admin .adownload { 
+			background-image: url(../media/egolttooltip/images/icon-download.png);
+		}
+		.egolt-admin .adocumentation{
+			background-image: url(../media/egolttooltip/images/icon-documentation.png);
+		}
+		.egolt-admin .ademo {
+			background-image: url(../media/egolttooltip/images/icon-demo.png);
+		}
+		.egolt-admin .alicense{
+			background-image: url(../media/egolttooltip/images/icon-license.png);
+		}
+		.egolt-admin .abuypro{
+			background-image: url(../media/egolttooltip/images/buypro.gif);
+		}
+		.egolt-admin .asupport{
+			background-image: url(../media/egolttooltip/images/support.gif);
+		}
+		.egolt-admin .aforum{
+			background-image: url(../media/egolttooltip/images/forum.png);
+		}
+		.egolt-admin .aversion { 
+			background-image: url(../media/egolttooltip/icon-version.png);
+		}
+		.egolt-admin .aboutp {
+			text-align: justify;
+			direction: ltr;
+			padding: 5px;
+			line-height: 20px;
+		}
+		.startmsg {
+			font-size: 13px;
+			padding: 8px 35px 8px 14px;
+			margin-bottom: 20px;
+			color: #c09853;
+			text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+			background-color: #fcf8e3;
+			border: 1px solid #fbeed5;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		</style>
+	]]></description>
+	<files folder="packages">
+		<file type="plugin" id="egolttooltip" group="system" client="admin" >plg_egolttooltip-v2.3.0.zip</file>
+		<file type="plugin" id="egoltupdate" group="system" client="admin" >plg_egoltupdate-v2.2.zip</file>
+	</files>
+	<updateservers>
+	   <server type="extension" priority="1" name="Egolt Tooltip Update Center">http://www.egolt.com/egolt_update.php?pr=egolttooltip&amp;ext=.xml</server>
+	</updateservers>
+	<scriptfile>script.php</scriptfile>
+</extension>

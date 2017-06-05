@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="3.0" method="upgrade">
+	<name>Egolt Update Plugin</name>
+	<creationDate>November 2015</creationDate>
+	<author>Egolt</author>
+	<authorEmail>info@egolt.com</authorEmail>
+	<authorUrl>http://www.egolt.com</authorUrl>
+	<copyright>Copyright (c) Egolt. All rights reserved</copyright>
+	<license>GNU GPL v2.0 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.2</version>
+	<description>Egolt Update Plugin</description>
+	<files>
+		<filename plugin="egoltupdate">egoltupdate.php</filename>
+		<folder>crypt</folder>
+		<filename>lic.php</filename>
+		<filename>update.php</filename>
+		<filename>update-j3.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+	</config>
+</extension>
