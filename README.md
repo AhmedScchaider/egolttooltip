@@ -1,7 +1,7 @@
 # Egolt Tooltip
 ### Make a tooltip wherever you want!
 
-Egolt Tooltip is a Joomla! Tooltip which enables you to easily add you tooltip to any area of Joomla!. Just copy and paste the code in Joomla! editor and type the text you want to apear in tooltip, that's enough!
+Egolt Tooltip is a Joomla! extension which enables you to easily add you tooltip to any area of Joomla!. Just copy and paste the code in Joomla! editor and type the text you want to apear in tooltip, that's enough!
 
 In addition, you can customize and control the tooltip with lots of parameters which we provided: Animation, Delay, Speed, Timer, Interactive mode, Offset, Position, Trigger, Touch devices and ... .
 
