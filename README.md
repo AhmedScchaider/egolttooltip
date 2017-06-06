@@ -11,9 +11,6 @@ By Egolt Tooltip, different styles and themes besides style parameters are avail
 
 Moreover, you can use the Egolt Tooltip as HTML tooltip too. So where you want to set the tooltip, even in HTML codes, you can, there is no limit!
 
-## No Support
-I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
-
 ## Main Features
 * Animation
 * Delay
@@ -39,6 +36,9 @@ I make this project available free of charge to everyone in hope that it will be
 
 ## Setup
 You can install this project by downloading the zip file of repository and then using the Joomla! extension manager available in the Joomla! Administrator Control Panel.
+
+## No Support
+I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
 
 ## Open Source License
 
